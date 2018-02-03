@@ -16,15 +16,15 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).on('turbolinks:load', function() {
-    $(document).on("submit", ".price_line form", function() {
-        $.ajax({
-            url: this.action,
-            cache: true,
-            type: 'POST',
-            data: $(this).serialize(),
-            dataType: 'script'
-        });
-        return false;
-    })
-});
+// $(document).on('turbolinks:load', function() {
+//     $(document).on("submit", ".price_line form", function() {
+//         $.ajax({
+//             url: this.action,
+//             cache: true,
+//             type: 'POST',
+//             data: $(this).serialize(),
+//             dataType: 'script'
+//         });
+//         return false;
+//     })
+// });
